@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Trivia</title>
+</head>
+
+<body>
+
+    <header class="container-fluid bg-primary text-white text-center py-3 mb-5">
+        <div class="row">
+            <div class="col">
+                <h1>Alex Trebek</h1>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="container">
+            <div class="row">
+                <div id="question" class="col-md-6">
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-success" onclick="app.questionController.show()">Show Answer</button>
+
+                    <button class="btn btn-primary" onclick="app.questionController.next()">Next Question</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
