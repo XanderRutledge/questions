@@ -2,7 +2,7 @@ import store from "../store.js";
 import Question from "../Models/Question.js";
 
 const _api = axios.create({
-    baseURL: "http://jservice.io/api/random" // default route
+    baseURL: "https://jservice.io/api/random" // default route
 })
 
 class QuestionService {
